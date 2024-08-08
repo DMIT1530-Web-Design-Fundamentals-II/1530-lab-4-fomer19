@@ -7,14 +7,12 @@
     --white: #fcfcfc;
     --yellow: #e5b261;
 }
-
 body {
     background-color: var(--white);
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
+    display: flex;
 }
-
-
 
 /* ON YOUR OWN
 
@@ -25,3 +23,260 @@ body {
     3. have a drop-shadow on the text
 
 */
+.first{
+    width: 50rem;
+    height: 70.5rem;
+}
+.second{
+    display: none;
+    width: 50rem;
+    height: 70.5rem;
+}
+.inner-container {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+.logo-head{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    display: flex;
+}
+.logo-head img{
+    width: 2rem;
+}
+.visible-head{
+    font-weight: 400;
+    font-size: 3.01rem;
+    line-height: 3.35rem;
+}
+h2, h3, legend, label[for="submit"] {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+legend, label[for="submit"] {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 2rem 0rem 1.1rem 0rem;
+    color: #111;
+}
+header .inner-container,
+header ul {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+main {
+    padding: 0rem 1rem 1rem 4rem;
+}
+.intro {
+    margin: 2rem 0 2rem 0;
+}
+.intro h2 {
+    margin-bottom: 1rem;
+}
+.intro p {
+    color: #000;
+    font-size: 1.15rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+form h2{
+    margin: -1rem -1rem;
+    background-color: #e5b261;
+    width: 50rem;
+    height: 4rem;
+    border-radius: 7px 7px 0px 0px;
+    text-align: center;
+    color: #FFF;
+    padding-top: 0.75rem;
+}
+main form {
+    background-color: var(--mid-grey);
+    border-radius: 7px 7px 0px 0px;
+    padding: 1rem;
+}
+fieldset {
+    border: none;
+    color: #666;
+    padding: 0;
+}
+fieldset > div {
+    margin-bottom: 1.125rem;
+}
+form input:not([type="radio"], [type="checkbox"], [type="submit"]),
+select,
+textarea {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+form textarea {
+    max-height: 16rem;
+    min-height: 5rem;
+    resize: vertical;
+}
+p.rules {
+    font-size: 0.85em;
+    margin: 0.5rem 0;
+    opacity: 0.65;
+}
+form label:not(input[type="radio"] + label, input[type="checkbox"] + label) {
+    display: block;
+    margin-bottom: 0.1rem;
+}
+form input[type="submit"] {
+    background-color: #374456;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    width: 48rem;
+}
+.help{
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 1.25rem;
+    font-weight: 100;
+}
+.help a{
+    color: #000;
+}
+@media screen and (min-width: 720px) {
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    fieldset > div {
+        flex: 0 1 48%;
+    }
+}
+@media screen and (max-width: 501px) {
+    body{
+        display: grid;
+    }
+    .first{
+        display: none;
+    }
+    .second{
+        display: initial;
+        height: 33.5rem;
+    }
+    main {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    .logo-head {
+        margin-bottom: 32rem;
+        margin-top: -35.65rem;
+        color: #fff;
+        text-shadow: 2px 2px 5px black;
+    }
+    .visible-head {
+        width: 25rem;
+    }
+    .intro p {
+        width: 30rem;
+        font-size: 1.1rem;
+    }
+    main form{
+        width: 28.5rem;
+    }
+    form h2 {
+        width: 28.5rem;
+        height: 6rem;
+        font-size: 1.35rem;
+    }
+    form input[type="submit"] {
+        width: 26.55rem;
+    }
+    .help {
+        width: 26.5rem;
+        padding: 1.25rem 0rem;
+        font-size: 0.85rem;
+    }
+}
+@media screen and (min-width: 502px) and (max-width: 801px) {
+    body{
+        display: grid;
+    }
+    .first{
+        display: none;
+    }
+    .second {
+        display: initial;
+        width: 49rem;
+        height: 48.5rem;
+    }
+    main {
+        padding: 0rem 1rem 1rem 5rem;
+    }
+    .logo-head {
+        margin-bottom: 47rem;
+        margin-top: -50rem;
+        color: #fff;
+        text-shadow: 2px 2px 5px black;
+    }
+    .visible-head {
+        width: 40rem;
+    }
+    .intro p {
+        width: 40.5rem;
+    }
+    main form{
+        width: 39rem;
+    }
+    .rules {
+        width: 16rem;
+    }
+    form h2 {
+        width: 39rem;
+        height: 4rem;
+        font-size: 1.35rem;
+        padding-top: 0.95rem;
+    }
+    form input[type="submit"] {
+        width: 37rem;
+    }
+    .help {
+        width: 38.5rem;
+        padding: 1.25rem 3rem;
+        font-size: 0.85rem;
+    }
+}
+@media screen and (min-width: 802px) and (max-width: 1081px){
+    .intro{
+        width: 28rem;
+    }
+    .first {
+        height: 76.5rem;
+    }
+    main {
+        padding: 0rem 2rem 1rem 3rem;
+    }
+    main form{
+        width: 28rem;
+    }
+    form h2 {
+        width: 28rem;
+        height: 6rem;
+        font-size: 1.35rem;
+        padding: 1rem 2rem;
+    }
+    form input[type="submit"] {
+        width: 26rem;
+    }
+    .help {
+        width: 30rem;
+        margin-left: -2rem;
+        font-size: 0.9rem;
+    }
+}
